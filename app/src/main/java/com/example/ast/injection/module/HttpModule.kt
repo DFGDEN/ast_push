@@ -101,7 +101,7 @@ class HttpModule(private val mBaseUrl: String) {
 
         }
 
-        client.addInterceptor(logging)
+//        client.addInterceptor(logging)
         return client.build()
 
     }
