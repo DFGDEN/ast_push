@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.example.ast"
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    final MOXY_VERSION = '1.5.5'
+    final GLIDE_VERSION = '4.8.0'
+    final RETROFIT_VERSION = '2.4.0'
+    final RX_VERSION = '2.0.2'
+    final PHOTO_VIEW_VERSION = '2.0.0'
+    final DAGGER2_VERSION = '2.16'
+
+    def daggerCompiler = "com.google.dagger:dagger-compiler:$DAGGER2_VERSION"
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+
+
+    //Moxy
+    implementation "com.arello-mobile:moxy-app-compat:$MOXY_VERSION"
+    implementation "com.arello-mobile:moxy-android:$MOXY_VERSION"
+    kapt "com.arello-mobile:moxy-compiler:$MOXY_VERSION"
+
+
+
+    // Retrofit
+    implementation "com.squareup.retrofit2:retrofit:$RETROFIT_VERSION"
+    implementation "com.squareup.retrofit2:converter-gson:$RETROFIT_VERSION"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$RETROFIT_VERSION"
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.1'
+
+    //Rx
+    implementation "io.reactivex.rxjava2:rxandroid:$RX_VERSION"
+    implementation "io.reactivex.rxjava2:rxjava:$RX_VERSION"
+
+    //Dagger2
+    implementation "com.google.dagger:dagger:$DAGGER2_VERSION"
+    implementation 'org.glassfish:javax.annotation:10.0-b28'
+
+    //Required by Dagger2
+    kapt daggerCompiler
+
+    //Firebase messaging
+    implementation "com.google.firebase:firebase-messaging:17.6.0"
+    implementation 'com.google.firebase:firebase-core:16.0.8'
+}
+
+apply plugin: 'com.google.gms.google-services'

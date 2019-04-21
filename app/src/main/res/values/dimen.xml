@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- common -->
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="chat_date_height">36dp</dimen>
+
+    <dimen name="radial_progress_size">40dp</dimen>
+    <dimen name="default_radial_progress_stroke_size">2dp</dimen>
+    <dimen name="radial_progress_padding">3dp</dimen>
+
+
+    <!-- margin -->
+    <dimen name="margin_mini">4dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+    <dimen name="margin_xlarge">40dp</dimen>
+    <dimen name="margin_xxlarge">52dp</dimen>
+    <dimen name="margin_xxxxlarge">72dp</dimen>
+    <dimen name="margin_xxxxxlarge">88dp</dimen>
+    <dimen name="margin_xxxxxxlarge">102dp</dimen>
+    <dimen name="margin_xxxxxxxlarge">144dp</dimen>
+    <!-- icons -->
+    <dimen name="icon_mini">24dp</dimen>
+    <dimen name="icon_medium">40dp</dimen>
+    <dimen name="icon_large">56dp</dimen>
+
+    <!-- cell -->
+    <dimen name="cell_mini_height">40dp</dimen>
+    <dimen name="cell_small_height">56dp</dimen>
+    <dimen name="cell_medium_height">72dp</dimen>
+    <dimen name="cell_large_height">88dp</dimen>
+
+    <!-- text -->
+    <dimen name="text_small">11sp</dimen>
+    <dimen name="text_error">12sp</dimen>
+    <dimen name="text_smallX">14sp</dimen>
+    <dimen name="text_medium">18sp</dimen>
+    <dimen name="text_large">24sp</dimen>
+    <dimen name="text_xlarge">32sp</dimen>
+
+
+</resources>

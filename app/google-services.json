@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "362321700278",
+    "firebase_url": "https://ast-expert.firebaseio.com",
+    "project_id": "ast-expert",
+    "storage_bucket": "ast-expert.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:362321700278:android:2b008a3d4421275f",
+        "android_client_info": {
+          "package_name": "com.example.ast"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "362321700278-0s3l9ve23u1jg3erhcq12vtkgn3rpcpj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8hEhSIEPz1R6DjGcAD796zTkTBuZ0cwg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "362321700278-0s3l9ve23u1jg3erhcq12vtkgn3rpcpj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
